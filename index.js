@@ -70,7 +70,7 @@ function renderEntries() {
   entries.forEach((entry, index) => {
     if (selectedFilter === 'all' || selectedFilter === entry.type) {
       const li = document.createElement('li');
-      li.classList.add('final-list'); // corrected this
+      li.classList.add('final-list'); 
       li.innerHTML = `
         ${entry.description} - $${entry.amount.toFixed(2)} (${entry.type})
         <span>
