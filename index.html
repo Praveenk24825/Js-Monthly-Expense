@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monthly Expense Calculator</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body style="background-color: #f5f5f5;">
+  <div class="container">
+    <h1 style="text-align: center;">Monthly Expense Calculator</h1>
+    <div class="data">
+      <div>Total Income: $<span id="total1">0.00</span></div>
+      <div>Expense: $<span id="total2">0.00</span></div>
+      <div>Balance: $<span id="total3">0.00</span></div>
+    </div>
+  </div>
+
+  <div class="paragraph">
+    A monthly budget helps create financial stability. Track your expenses and save for emergencies and major purchases.
+    <br />Start budgeting using this calculator!
+  </div>
+
+  <form id="entry">
+    <input type="text" id="description" placeholder="Description" required />
+    <input type="number" id="amount" placeholder="Amount" required />
+    <select id="select">
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+    <button type="submit" class="submit">Add</button>
+    <button type="button" id="resetAll">Reset All Data</button>
+  </form>
+
+  <div class="rotate">
+    <label><input type="radio" name="rotate" value="all" checked>All</label>
+    <label><input type="radio" name="rotate" value="income">Income</label>
+    <label><input type="radio" name="rotate" value="expense">Expense</label>
+  </div>
+
+  <ul class="value"></ul>
+
+  <script src="index.js"></script>
+</body>
+</html>
